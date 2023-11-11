@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Marwah Catovic Art + Design</title>
+
+  <style>
+    table#your-table-items {
+      border-collapse: collapse;
+      /* in inspector mode - easier to see the difference between collapse and no collapse */
+      border: 1px solid rgba(154, 154, 154, 0.75);
+      text-align: center;
+      
+    }
+
+    table#your-table-items th:nth-child(1),
+    table#your-table-items td:nth-child(1) {
+      width: 20%;
+    }
+
+    table#your-table-items th:nth-child(2),
+    table#your-table-items td:nth-child(2) {
+      width: 20%;
+    }
+
+    table#your-table-items th:nth-child(3),
+    table#your-table-items td:nth-child(3) {
+      width: 20%;
+    }
+
+    table#your-table-items th:nth-child(4),
+    table#your-table-items td:nth-child(4) {
+      width: 35%;
+    }
+
+    table#your-table-items thead {
+      font-size: 0.9em;
+      text-transform: uppercase;
+    }
+
+    table#your-table-items thead th {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px;
+    }
+
+    table#your-table-items thead th:hover {
+      color: #fff;
+      background-color: #12173f;
+      cursor: pointer;
+    }
+
+    table#your-table-items thead th.tablesorter-headerAsc,
+    table#your-table-items thead th.tablesorter-headerDesc {
+      background-color: #12173f
+    }
+
+    table#your-table-items tbody {
+      font-size: 0.9em;
+      line-height: 15px;
+    }
+
+    /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+    /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+    table#your-table-items tbody tr:nth-child(even) {
+      background: rgba(154, 154, 154, 0.25);
+    }
+
+    table#your-table-items tbody tr:hover {
+      color: #fff;
+      background-color: #12173f;
+    }
+
+    table#your-table-items tbody td {
+      padding: 8px 20px;
+      border-top: 1px solid rgba(154, 154, 154, 0.75);
+      border-right: 1px solid rgba(154, 154, 154, 0.75);
+    }
+
+    table#your-table-items tbody td img {
+      width: 100px;
+      
+      float: right;
+      margin: 0 10px 0 0;
+      border: 1px solid rgba(154, 154, 154, 0.75);
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <div class="flex-container logo-bg"><a href="index.html" style="border-bottom: none;"><img class="logo" src="./assets/images/MCADLogo.png" alt="MCAD logo"/></a></div>
+  <nav>
+    <div class="horizontal-nav flex-container">
+      <a href="index.html">Home</a>
+      <a href="2-media.html">Media</a>
+      <a href="3-gallery.html">Gallery</a>
+      <a href="#" class="active-menu-item">Materials</a>
+      <a href="5-videolinks.html">Video Links</a>
+      <a href="6-morework.html">More Work</a>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="2-media.html">Media</a>
+        <a href="3-gallery.html">Gallery</a>
+        <a href="#" class="active-menu-item">Materials</a>
+        <a href="5-videolinks.html">Video Links</a>
+        <a href="6-morework.html">More Work</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding-top:30px; padding-left:100px;">
+    
+      <p>Home > <strong>Materials</strong></p>
+      <br>
+      <h1> Materials</h1>
+      <br>
+      <p> The following table is a compilation of my favorite art supplies, the manufacturer, and a photo of the product: </p>
+     <br>
+        <!-- TODO: add content -->
+      
+        <article>
+          <div>
+            
+            <table id="your-table-items">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Art Supply</th>
+                  <th>Manufacturer</th>
+                  <th>Product Name and Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Studio Essentials</td>
+                  <td>Daylight Lamp</td>
+                  <td>The Daylight Copany</td>
+                  <td>Daylight U32500 Triple Bright Lamp
+                    <img src="./assets/images/Daylight Lamp.png" alt="Daylight Lamp" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Studio Essentials</td>
+                  <td>Drafting Table</td>
+                  <td>The Alvin Company</td>
+                  <td>WorkMaster Drafting Table, 37.5" x 60"
+                    <img
+                      src="./assets/images/Drafting Table.png"
+                      alt="Drafting Table" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Studio Essentials</td>
+                  <td>Digital Camera</td>
+                  <td>Nikon</td>
+                  <td>D3400 DSLR 24.2 Megapixel Camera
+                    <img src="./assets/images/Nikon.png" alt="Digital Camera" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Watercolor Material</td>
+                  <td>Watercolor Paint</td>
+                  <td>Winsor & Newton</td>
+                  <td>Winsor & Newton Professional Watercolor Tubes
+                    <img src="./assets/images/Watercolor Tube.png" alt="Watercolor Tube" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Watercolor Material</td>
+                  <td>Watercolor Brushes</td>
+                  <td>Daler-Rowney</td>
+                  <td>Robert Simmons White Sable synthetic watercolor brushes
+                    <img src="./assets/images/Watercolor Brush.png" alt="Watercolor Brush" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Watercolor Material</td>
+                  <td>Watercolor Paper</td>
+                  <td>Arches</td>
+                  <td>Arches Cold-pressed 140-lb 100% cotton paper
+                    <img src="./assets/images/Arches Paper.png" alt="Watercolor Paper" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Pastel Material</td>
+                  <td>Soft Pastel Sticks</td>
+                  <td>Royal Talens</td>
+                  <td>Rembrandt Soft Pastels
+                    <img src="./assets/images/Rembrandt Pastels.png" alt="Rembrandt Pastels" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Pastel Material</td>
+                  <td>Soft Pastel Sticks</td>
+                  <td>Unison</td>
+                  <td>Unison Handmade Soft Pastels
+                    <img src="./assets/images/Unison Pastels.png" alt="Unison Pastels" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Pastel Material</td>
+                  <td>Pastel Pencils</td>
+                  <td>Faber-Castell</td>
+                  <td>Pitt Pastel Pencils
+                    <img src="./assets/images/Pastel Pencils.png" alt="Pastel Pencils" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Pastel Material</td>
+                  <td>Pastel Surface</td>
+                  <td>Clairefontaine</td>
+                  <td>Pastelmat Card
+                    <img src="./assets/images/Pastelmat.png" alt="Pastelmat Card" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+        <script
+          type="text/JavaScript"
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+          type="text/JavaScript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+        <!-- BEG JavaScript -->
+        <script>
+          $(document).ready(function () {
+            $("table#your-table-items").tablesorter({
+              sortList: [
+                [2, 1],
+              ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+              CssAsc: "tablesorter-headerAsc",
+              CssDesc: "tablesorter-headerDesc",
+            });
+          });
+        </script>
+        <!-- END JavaScript -->
+    
+
+
+
+      </div>
+    
+      <!-- TODO: add content -->
+      <div>
+      
+      </div>
+    </aside>
+  </section>
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer class="footer-content">
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #12173f;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #b1b1b1;
+      }
+      </style>
+      
+      <ul class="footer-menu">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="2-media.html">Media</a></li>
+        <li><a href="3-gallery.html">Gallery</a></li>
+        <li><a href="4-materials.html">Materials</a></li>
+        <li><a href="5-videolinks.html">Video Links</a></li>
+        <li><a href="6-morework.html">More Work</a></li>
+      </ul>
+    
+      <p class="contact" >Email: mcad@gmail.com</p>
+
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right" style="color: #ffffff;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right" style="color: #ffffff;"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x" style="color: #ffffff;"></a>
+    </div>
+
+    <p class="contact">&copy Copyright 2023 Marwah Catovic Art + Design. All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

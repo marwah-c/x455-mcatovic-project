@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.hero-image {
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: bottom; /* remove whitespace below image */
+  z-index: -1;
+}
+h1 {
+color: #12173f;
+font-size: 48px;
+font-weight: bold;
+}
+
+h2 {
+  color: #12173f;
+  font-size: 30px;
+  font-weight: bold;
+  }
+
+  h3 {
+    color: #12173f;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+#gallery-heading {
+    color: #12173f;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+.container {
+position: relative;
+width: 100%;
+}
+.hero-text {
+position: absolute;
+top: 15%;
+left: 30%;
+}
+.footer-content {
+width: 100%;
+padding: 90px 0;
+
+
+color: white;
+font-size: 16px;
+background-color: #12173f;
+}
+
+@font-face {
+  font-family: "Font Family 1";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Font Family 2";
+  src: url("../fonts/BonheurRoyale-Regular.ttf") format("truetype");
+}
+
+body {
+  color: #12173f;
+  font-size: 16px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.logo {
+  width: 272px;        /* by default, align to the left */
+ 
+  display: block;  /* center */
+  
+  
+  padding-top: 20px;
+  padding-left: 80px;
+}
+
+
+.logo-bg {
+  background-color: #12173f;
+  float: left;
+
+  z-index: +1;
+
+  
+}
+
+.horizontal-nav {
+  background-color: #12173f;
+  font-size: 16px;
+  
+  
+  
+}
+
+.horizontal-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline;
+  margin: 50px 0px 5px 100px;
+  padding: 10px 10px 10px 10px;
+  /* border-bottom: 1px solid #b1b1b1; */
+  text-align: center;
+}
+
+.horizontal-nav a:hover {
+  color: #ffffff;
+  cursor:grab;
+  background-color: #b1b1b1;
+  padding: 10px 10px 10px 10px; 
+  
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #12173f;
+}
+
+
+
+.dropdown {
+  /*width: 100%;*/
+  position: absolute;
+  display: none;
+  /* hide dropdown menu and button in bigger screen size */
+  top: 0;
+  /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+  right: 0;
+  /* by default, always align to left */
+  /*right: 0;*/
+  /* if dropdown is set to right, dropdown-content should be set to right */
+}
+
+.dropbtn {
+  background-color: rgba(0, 102, 102, 0);
+  color: #ffffff;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.dropbtn:hover {
+  background-color: #b1b1b1;
+}
+
+.dropdown-content {
+  display: none;
+  /* set display to none, so dropdown menu won't show till hover dropdown */
+  position: absolute;
+  right: 0;
+  /* if dropdown is set to right, dropdown-content should be set to right */
+  background-color: #12173f;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #b1b1b1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover {
+  background-color: #12173f;
+}
+  
+.active-menu-item {
+  background-color: #b1b1b1;
+}
+
+.padding-right {
+  padding-right: 15px;
+}
+
+.to-top {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+div.to-top a {
+  border-bottom: none;
+}
+
+footer > div.social-icon {
+  padding: 30px;
+  display:flex;
+  float:right;
+  justify-content: right;
+}
+
+footer a {
+  border-bottom: none;
+  
+}
+
+a {
+  color: #12173f;
+  text-decoration: none;
+}
+
+.contact {
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  margin-top: 30px;
+  
+  text-align:center;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 30px;
+    padding-bottom: 10px;
+  }
+
+  .horizontal-nav {
+    display: none;
+    /* hide the nav bar in small screen size */
+  }
+
+  .dropdown {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    /* show dropdown menu and button in small screen size */
+  }
+
+  .dropdown-content {
+    min-width: 500px;
+  }
+}
+
+
+
+li {
+  margin-left: 40px;
+}
+

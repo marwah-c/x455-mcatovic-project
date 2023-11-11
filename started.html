@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Nav Bar Responsive</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header a.logo {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(./assets/images/dish-01.png) no-repeat 0 0;
+    background-size: contain;
+    top: 10px;
+    left: 20px;
+  }
+  .horizontal-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px 0px 0px 180px;
+  }
+  .horizontal-nav a {
+    display: inline-block;
+    color: #ffffff;
+    margin: 25px 0px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .horizontal-nav a:hover {
+    cursor: grab;
+    background-color: #b1b1b1;
+  }
+  header.food-page {
+    background: #12173f url(./assets/images/food-02.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+  }
+  .active-menu-item {
+    border-bottom: 2px solid white;
+  }
+  .dropdown {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+  }
+  .dropbtn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 102, 102, 0.8);
+  }
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a:hover {
+    background-color: #339999;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover {
+    background-color: rgba(0, 102, 102);
+  }
+  @media screen and (max-width: 500px) {
+    .horizontal-nav {
+      display: none;
+    }
+    .dropdown {
+      display: block;
+    }
+    .dropdown-content {
+      min-width: 500px;
+    }
+    header a.logo {
+      width: 40px;
+    }
+    header.food-page {
+      background: #eee url(./assets/images/food-02.jpg) no-repeat center;
+      background-size: cover;
+      height: 100px;
+    }
+    header a.logo {
+      position: absolute;
+      background: url(./assets/images/dish-01.png) no-repeat 0 0;
+      background-size: contain;
+      top: 5px;
+      left: 10px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <header class="food-page">
+    <a class="logo" href=""></a>
+    <nav>
+      <div class="horizontal-nav">
+        <a href="">Home</a>
+        <a class="active-menu-item" href="#">Media</a> 
+        <a href="">Gallery</a>
+        <a href="">Materials</a>
+        <a href="">Video Links</a>
+        <a href="">More Work</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+        <div class="dropdown-content">
+          <a href="">Home</a>
+          <a class="active-menu-item" href="#">Media</a>
+          <a href="">Gallery</a>
+          <a href="">Materials</a>
+          <a href="">Video Links</a>
+          <a href="">More Work</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>Start adding page content here......</section>
+</body>
+
+</html>
